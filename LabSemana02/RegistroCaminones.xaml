@@ -1,0 +1,37 @@
+﻿<Window x:Class="LabSemana02.RegistroCaminones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabSemana02"
+        mc:Ignorable="d"
+        Title="RegistroCaminones" Height="200" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Textos  -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center">Peso Máximo:</TextBlock>
+        <TextBox Name="texto1" Grid.Row="0" Grid.Column="1" Margin="5" PreviewTextInput="Texto1_PreviewTextInput" />
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center">Placa :</TextBlock>
+        <TextBox Name="texto2" Grid.Row="1" Grid.Column="1" Margin="5"></TextBox>
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="5" VerticalAlignment="Center">Peso Minimo:</TextBlock>
+        <TextBox Name="texto3" Grid.Row="2" Grid.Column="1" Margin="5" PreviewTextInput="Texto1_PreviewTextInput"></TextBox>
+
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button Margin="10" Click="ButtonAceptar_Click">Aceptar</Button>
+            <Button Margin="10" Click="ButtonCancelar_Click" >Cancelar</Button>
+        </StackPanel>
+    </Grid>
+    
+  
+</Window>
